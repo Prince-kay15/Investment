@@ -246,7 +246,7 @@
     z-index: 1;
 }
 
-.owl-prev,
+/* .owl-prev,
 .owl-next {
     position: absolute;
     width: 60px;
@@ -261,7 +261,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
-}
+} */
 
 .owl-prev {
     left: 30px;
