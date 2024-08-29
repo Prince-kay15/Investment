@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgotten Password</title>
+    <title>Verify Code</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
 </head>
@@ -11,9 +11,18 @@
     <!-- forgotten password -->
     <div class="container__form container--signin">
         <form action="#" method="post" class="form" id="form2">
-            <h2 class="form__title">Forgotten Password</h2>
-            <input type="email" placeholder="Email" id="email" class="input" />
-            <button class="btn"><a href="verify.html">Send Verification code</a> </button>
+            <h2 class="form__title">Enter Verification Code</h2>
+            <div class="input-head">
+            <input type="text" placeholder="-"  class="input" />
+            <input type="text" placeholder="-"  class="input" />
+            <p>:</p>
+            <input type="text" placeholder="-"  class="input" />
+            <input type="text" placeholder="-"  class="input" />
+            <p>:</p>
+            <input type="text" placeholder="-"  class="input" />
+            <input type="text" placeholder="-"  class="input" />
+            </div>
+            <button class="btn">Verify</button>
         </form>
     </div>
 </body>
@@ -86,11 +95,6 @@
 		box-sizing: border-box;
 	}
 
-	.btn a{
-		text-decoration: none;
-		color: white;
-	}
-
 	.btn:active {
 		transform: scale(0.95);
 	}
@@ -112,12 +116,18 @@
 		border: none;
 		padding: 0.9rem;
 		margin: 0.5rem 0;
-		width: 100%;
+		width:50px;
 		box-sizing: border-box;
 		font-weight: bolder;
+        text-align: center;
 		outline: none;
 		border-radius: var(--button-radius);
 	}
+    .input-head{
+        display: flex;
+        gap: 10px;
+        font-weight: bolder;
+    }
 
 	@media (min-width: 768px) {
 		.container__form {
